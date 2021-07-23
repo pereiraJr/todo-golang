@@ -4,7 +4,7 @@ import (
 	"log"
 	"net/http"
   "os"
-	// "eddy.com/todo/data"
+	"eddy.com/todo/data"
 	"eddy.com/todo/route"
 )
 
@@ -15,7 +15,7 @@ func main() {
 		PORT = ":" + envPort
 	}
 
-	// data.InitDatabase()
+	data.InitDatabase()
 
 	log.Print("Server on ", PORT)
 	http.ListenAndServe(PORT, route.RegisterRoute())
