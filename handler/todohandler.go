@@ -12,7 +12,7 @@ import (
 )
 
 func Health(responseWriter http.ResponseWriter, request *http.Request) {
-	fmt.Fprint(responseWriter, "Server OK 4.0")
+	fmt.Fprint(responseWriter, "Server OK 5.0")
 }
 
 func Insert(responseWriter http.ResponseWriter, request *http.Request) {
